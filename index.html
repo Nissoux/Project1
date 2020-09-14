@@ -4,15 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Easy French</title>
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-        <header class="main-header">
-            <div class="main-logo">
+        <header id="main-header">
+            <div id="main-logo">
                 <img src="img/logo.png" alt="Easy French logo">
+                <br><em>Online french language school</em>
             </div>
             <div>
-                <nav class="upper-navbar">
-                    <ul>
+                <nav id="upper-navbar">
+                    <ul id="navbar-elements">
                         <li>
                             <a href="#about-us">About</a>
                         </li>
@@ -29,29 +31,29 @@
                 </nav>
             </div>
             <div>
-                <a href="" class="contact-us">Contact us</a>
+                <a href="#contacts" class="contact-us">Contact us</a>
             </div>
         </header>
         <main>
             <div id="selection">
                 <div class="slection-inner">
                     <div class="icons">
-                        <img src="img/pin.png" alt="Everywhere">
                         <h2>Everywhere</h2>
+                        <img src="img/location.png" alt="Everywhere">
                         <p>We offer online courses available 24/7. You can access all the materials wherever you are</p>
                     </div>
                 </div>
                 <div class="selection-inner">
                     <div class="icons">
-                        <img src="img/Clock.png" alt="anywhere">
                         <h2>Anywhere</h2>
+                        <img src="img/Clock.png" alt="anywhere">
                         <p>We offer online courses available 24/7. You can access all the materials whenever you want. No obligations!</p>
                     </div>
                 </div>
                 <div class="selection-inner">
                     <div class="icons">
-                        <img src="img/Clock.png" alt="anytime">
                         <h2>Anytime</h2>
+                        <img src="img/Clock.png" alt="anytime">
                         <p>Access our courses from any place or time. The one and only thing you need is a high-speed Internet connection.</p>
                     </div>
                 </div>
@@ -86,6 +88,7 @@
                                 Required level: C2<br>
                                 Tutor: Anis Dahmani<br>
                                 Max number of students per course: 6<br>Course duration: 1 month
+                            
                             </p>
                             <a href="" class="get-started">Get started</a>
                         </li>
@@ -96,6 +99,7 @@
                                 No required profiency<br>
                                 Tutor: Anis Dahmani<br>
                                 Max number of students per course: 6<br>Course duration: 1 month
+                            
                             </p>
                             <a href="" class="get-started">Get started</a>
                         </li>
@@ -106,6 +110,7 @@
                                 Required level: A1<br>
                                 Tutor: Anis Dahmani<br>
                                 Max number of students per course: 6<br>Course duration: 3 months
+                            
                             </p>
                             <a href="" class="get-started">Get started</a>
                         </li>
@@ -177,20 +182,25 @@
                         <h2>Adress</h2>
                         <p>Kyiv</p>
                     </div>
-                     <div class="info-inner">
+                    <div class="info-inner">
                         <h2>Hours</h2>
-                        <p>Monday-Saturday: 11am-9pm <br>Sunday: 11am-7pm</p>
+                        <p>
+                            Monday-Saturday: 11am-9pm <br>Sunday: 11am-7pm
+                        </p>
                     </div>
-                     <div class="info-inner">
+                    <div class="info-inner">
                         <h2>Contacts</h2>
-                        <p>+1(xxx) xxx xxx xxx <br> <a href="mailto:xxxx@gmail.com">xxxx@gmail.com</a></p>
+                        <p>
+                            +1(xxx) xxx xxx xxx <br>
+                            <a href="mailto:xxxx@gmail.com">xxxx@gmail.com</a>
+                        </p>
                     </div>
                 </div>
                 <div id="form">
                     <form action="https://formspree.io/xknqdlkv" method="post">
                         <div class="form-infos">
                             <input type="text" placeholder="Full name*" name="name" required>
-                        </div>   
+                        </div>
                         <div class="form-infos">
                             <input type="text" placeholder="Phone number*" name="phone-number" required>
                         </div>
@@ -199,20 +209,72 @@
                         </div>
                         <div class="form-text">
                             <input type="text" placeholder="Type your message" name="your-message">
-                        </div> 
+                        </div>
                         <div id="submit">
                             <input type="submit" name="submit" value="send">
                         </div>
-                    
                     </form>
                 </div>
-                
-
+                <div id="map">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="576" height="198" id="gmap_canvas" src="https://maps.google.com/maps?q=kyiv&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <a href="https://www.embedgooglemap.net">embed google map</a>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Easy French logo">
+            </div>
+            <div class="nav-lower">
+                <ul>
+                        <li>
+                            <a href="#about-us">About</a>
+                        </li>
+                        <li>
+                            <a href="#gallery">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#our-courses">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#our-team">Tutors</a>
+                        </li>
+                    </ul>  
+            </div>
+            <div id="socials-footer">
+                <p>Follow Us</p>
+                <ul class="social-networks-footer">
+                    <li>
+                        <a href="https://www.facebook.com/">
+                        <img src="img/Facebook.png" alt="Facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/">
+                                    <img src="img/Twitter.png" alt="Twitter">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/">
+                                    <img src="img/LinkedIn.png" alt="LinkedIn">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/?hl=en">
+                                    <img src="img/instagram.png" alt="instagram">
+                                </a>
+                            </li>        
+                </ul>
+            </div>
+            <div id="copyright-mentions">
+            <p>© Created by</p>
+            <p>All rights Reserved</p>
             </div>
 
-
-                
-        </main>
-        <footer></footer>
+        </footer>
     </body>
 </html>
