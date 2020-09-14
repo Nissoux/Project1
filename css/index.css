@@ -1,40 +1,15 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .mapouter {
-                                position: relative;
-                                text-align: right;
-                                height: 198px;
-                                width: 576px;
-                            }
+    position: relative;
+    text-align: right;
+    height: 198px;
+    width: 576px;
+}
 
-                            .gmap_canvas {
-                                overflow: hidden;
-                                background: none!important;
-                                height: 198px;
-                                width: 576px;
-                            }
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    height: 198px;
+    width: 576px;
+    
+}
+
