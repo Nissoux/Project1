@@ -17,7 +17,7 @@ header{
     background-image: url(../img/header-background.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 250px;
+    min-height: 220px;
     opacity: 0.9;
 }
 
@@ -33,14 +33,15 @@ header .logo{
     padding: 0;
     margin-bottom: 0;
 }
-@media (min-width:665px){
-    .header-nav{
+@media (max-width:660px){
+    .header-nav,.navbar-elements.contact-us{
         display:flex;
         flex-direction:column;
+        align-items: center;
     }
 }
 .header-nav{
-    /*display: flex;*/
+    display: flex;
     justify-content: space-around;
     align-items: center;
 
@@ -50,7 +51,7 @@ header .logo{
 .navbar-elements{
     margin-top: 1.6rem;
     /*justify-content: space-around;*/
-    margin-left: 70px;
+    margin-left: 30px;
    
     
 
@@ -128,4 +129,3 @@ header .logo{
     width: 576px;
     
 }
-
