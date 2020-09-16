@@ -23,10 +23,7 @@ header{
 
 header .logo{
     color: white;
-    display: block;
-    text-align: center;
-
-    }
+}
 
 .logo>h1{
     font-size: 2.5rem;
@@ -47,33 +44,19 @@ header .logo{
 
 }
 
-
 .navbar-elements{
     margin-top: 1.6rem;
-    /*justify-content: space-around;*/
-    margin-left: 30px;
-   
-    
-
-}
+   }
 .navbar-elements a{
     padding: 10px;
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
-    /*background-color: rgb(18, 209, 184);
-    border-radius: 20px;*/
-    
-
-    
-   
 }
+
 .contact-us{
     margin-top: 1.6rem;
-    
-    
-    
-    }
+}
 
 .contact-us a{
     text-decoration: none;
