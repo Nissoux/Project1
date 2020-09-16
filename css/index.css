@@ -1,3 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+
+:root{
+    --main-color:black;
+    --accent-color:white;
+    font-family: 'Dosis', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    max-width: 1024px;
+    margin:auto;
+}
+
+header{
+    background-image: url(../img/header-background.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 250px;
+    opacity: 0.9;
+}
+
+header .logo{
+    color: white;
+    display: block;
+    text-align: center;
+
+    }
+
+.logo>h1{
+    font-size: 2.5rem;
+    padding: 0;
+    margin-bottom: 0;
+}
+@media (min-width:665px){
+    .header-nav{
+        display:flex;
+        flex-direction:column;
+    }
+}
+.header-nav{
+    /*display: flex;*/
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.navbar-elements{
+    margin-top: 1.6rem;
+    /*justify-content: space-around;*/
+    margin-left: 70px;
+   
+    
+
+}
+.navbar-elements a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    /*background-color: rgb(18, 209, 184);
+    border-radius: 20px;*/
+    
+
+    
+   
+}
+.contact-us{
+    margin-top: 1.6rem;
+    
+    
+    
+    }
+
+.contact-us a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(18, 209, 184);
+    color: black;
+    border-radius: 20px;
+}
+
+.navbar-elements a:hover{
+    background-color: rgb(18, 209, 184);
+    transition: .5s;
+    border-radius: 20px;
+
+}
+
+.contact-us a:hover{
+    transition:0.5s ease;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .mapouter {
     position: relative;
     text-align: right;
