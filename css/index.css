@@ -6,10 +6,14 @@
     font-family: 'Dosis', sans-serif;
     scroll-behavior: smooth;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
-    max-width: 1024px;
+    max-width: 90%;
     margin:auto;
 }
 
@@ -17,7 +21,7 @@ header{
     background-image: url(../img/header-background.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 220px;
+    min-height: 100px;
     opacity: 0.9;
 }
 
@@ -41,11 +45,13 @@ header .logo{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 
 }
 
 .navbar-elements{
     margin-top: 1.6rem;
+    margin-right: 50px;
    }
 .navbar-elements a{
     padding: 10px;
@@ -78,6 +84,21 @@ header .logo{
     background-color: white;
 }
 
+#selection{
+    display: flex;
+    flex-direction: row;   
+}
+
+.selection-inner{
+    display: flex;
+    flex-direction: column;
+    }
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 
