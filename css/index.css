@@ -16,7 +16,7 @@ body{
     max-width: 90%;
     margin:auto;
 }
-
+/*HEADER START*/
 header{
     background-image: url(../img/header-background.jpg);
     background-position: center;
@@ -34,13 +34,111 @@ header .logo{
     padding: 0;
     margin-bottom: 0;
 }
-@media (max-width:660px){
-    .header-nav,.navbar-elements.contact-us{
-        display:flex;
+
+/*HEADER END*/
+
+
+@media only screen and (max-width:760px){
+      
+    .header-nav,.navbar-elements,.contact-us{
+        display: flex;
         flex-direction:column;
         align-items: center;
+        margin: 0;
     }
+    .navbar-elements{
+        margin-left: 50px;
+        display: none;
+    }
+    .contact-us{
+        margin-bottom: 1.6rem;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    /* HAMBURGER-MENU */
+  .hamburger-menu{
+    width: 30px;
+    height: 30px;
+   /* padding-right: 10px;*/
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .line{
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transition: all .5s;
+  }
+
+ .change .line-1{
+    transform: rotateZ(-45deg) translate(-8px, 6px);
+  }
+ .change .line-2{
+    opacity: 0;
+  }
+ .change .line-3{
+    transform: rotateZ(45deg) translate(-8px, -6px);
+  }
+
+     .main-nav{
+     display: none;
+     
+  
+  }
+  .main-nav>ul {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  
+  }
+  .main-nav li {
+    border-top: .1px dashed #e9ceffce ;
+  }
+
+
+/* HAMBURGER-MENU-END */
+
+/* ABOUT US RESPONSIVE START */
+  .about-us-inner{
+      grid-template-columns: 1fr !important ; 
+      grid-template-rows: 2fr !important ;
+  }
+   
+/*ABOUT US RESPONSIVE END*/
+
+  .formulas > ul{
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 3fr ;
+    row-gap: 30px;
+  }
+
+  .teachers{
+      grid-template-columns: 1fr !important;
+      grid-row: 2fr; 
+  }
+  
+
+  .contacts{
+    margin-top: 2px;
+    display:grid;
+    grid-template-rows: 1fr !important;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    column-gap: 50px;
 }
+    
+    
+}
+
+/*MAIN NAVBAR START*/
 .header-nav{
     display: flex;
     justify-content: space-around;
@@ -49,6 +147,12 @@ header .logo{
 
 }
 
+.slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
 .navbar-elements{
     margin-top: 1.6rem;
     margin-right: 50px;
@@ -66,10 +170,10 @@ header .logo{
 
 .contact-us a{
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 15px 10px 15px;
     background-color: rgb(18, 209, 184);
     color: black;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 .navbar-elements a:hover{
@@ -84,21 +188,333 @@ header .logo{
     background-color: white;
 }
 
-#selection{
-    display: flex;
-    flex-direction: row;   
+/*MAIN NAVBAR END*/
+
+/* ABOUT US SECTION START*/
+
+#about-us{
+    margin-top: 30px;
 }
 
-.selection-inner{
+#illustration-about >img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-us-inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+
+.about__us__description{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+}
+
+/* ABOUT US SECTION END*/
+
+/* OUR COURSES SECTION START*/
+
+#our-courses{
+    margin-top: 30px;
+    background-image: url(https://cdn.wallpapersafari.com/18/70/6iMmov.png);
+    background-attachment: fixed;
+    width: 100%;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+
+.our-courses-title > h2 {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+.formulas{
+    margin-top: 60px;    
+}
+.formulas > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    text-align: center;
+    column-gap: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
     }
 
-.icons{
+.course-type{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border-radius: 15px;
+    
+}
+
+.course-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.course-price{
+    font-size:1.5rem ;
+    font-weight: bold;
+    color: turquoise;
+    padding-bottom: 40px;
+}
+
+.course-description{
+    font-size: 1rem;
+    padding-bottom: 40px;
+}
+
+.get-started{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: blue;
+    color: cornsilk;
+    padding: 10px 30px 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.get-started:hover{
+    background-color: darkblue;
+    box-shadow: 10px 5px 5px black;
+    transition: .3s;
+}
+
+.contact-us-about{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    }
+
+.contact-us-about > a{
+    text-decoration: none;
+    border: 2px white solid;
+    color: white ;
+    font-weight: bold;
+    padding: 10px 30px 10px 30px ;
+    border-radius: 50px;
+}
+
+.contact-us-about > a:hover{
+    background-color: white;
+    color: blue;
+    transition: 0.5s;
+}
+/* OUR COURSES SECTION END*/
+
+/* OUR TEAM SECTION START */
+
+#our-team{
+    margin-top: 50px;
+}
+
+#our-team > h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+.teachers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 100px;
+}
+
+.prof{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+.prof > img {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.teacher-name , .profession {
+    padding-top: 30px; 
+    }
+
+.about-teacher{
+    padding-top:15px ;
+    padding-bottom:15px;
+}
+
+.social-networks{
+    display:flex;
+    list-style: none;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.social-icons{
+   width:100%;
+   transition: 0.5s; 
+}
+.social-icons:hover{
+   transform: scale(1.5);
+   } 
+
+.all-team{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.all-team> a {
+    text-decoration: none;
+    background-color: none;
+    color: black;
+    border: blue 2px solid;
+    border-radius: 50px;
+    padding:10px 30px 10px 30px ;
+    
+
+}
+
+.all-team > a:hover{
+    color: white;
+    background-color: blue;
+    transition: 0.5s;
+}
+
+/* OUR TEAM SECTION END */
+
+
+/* CONTACTS SECTION START */
+.contacts{
+    margin-top: 100px;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    column-gap: 50px;
+    }
+
+
+.contacts-title>h2{
+    font-size: 5rem;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.subtitles-contacts {
+    font-size: 1.2rem;
+    padding-left: 15px ;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.info-inner > h2{
+    font-size: 1.8rem;
+    color: white;
+}
+
+.info-inner >p {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.info-inner{
+    padding-left: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.din-rebi{
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.din-rebi form{
+    width: 80% !important;
+    background-color: white;
+    border-radius: 25px;
+}
+
+
+.form-infos, .form-text{
+    padding: 25px 15px;
+   /* box-sizing: border-box;*/
+    
+}
+
+
+.form-infos > input {
+height: 40px;
+     width: 100%;
+     border-radius: 25px;
+     padding: 15px;
+     background-color: rgb(216, 212, 212);
+     border: none;
+}
+
+.form-text> input{
+    height: 150px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 15px;
+    border: none;
+    background-color: rgb(216, 212, 212);
+}
+
+#submit{
+   margin-bottom: 15px;
+   display: flex;
+   align-content: center;
+   text-align: center;
+   margin-left: 190px;
+   margin: auto;
+   padding-bottom: 20px;
+}
+
+#submit > input{
+    padding: 10px 30px 10px 30px;
+    background-color: blue;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    color : white;
+    font-weight: bold;
+    display: flex;
+    margin: auto;
+}
+
+
+/*CONTACTS SECTION END*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
