@@ -590,7 +590,7 @@ height: 40px;
         transition: 0.3s;
 }
 
-.copyright-mentions{
+#copyright-mentions{
     display: flex;
     justify-content: space-evenly;
 }
