@@ -245,7 +245,7 @@ header .logo{
 
 #our-courses{
     margin-top: 30px;
-    background-image: url(/img/paris-background-min.jpg);
+    background-image: url(../img/paris-background-min.jpg);
     background-position: center;
     background-attachment: fixed;
     width: 100%;
