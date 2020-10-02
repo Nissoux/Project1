@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easy French</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -34,76 +35,74 @@
         </nav>
     </header>
     <main>
-        <!-- First Section start 
-
-
-        <section id="selection">
-            <button class=" btn__carousel__prev ">
-                <img src="/img/left.svg">
-            </button>
-            <div class="slider">
-                <div class="slection-inner">
-                    <div class="icons">
-                        <h2>Everywhere</h2>
-                        <img src="img/location.png" alt="Everywhere">
-                        <p>We offer online courses available 24/7. You can access all the materials wherever you are</p>
+        <!--CAROUSEL SECTION-->
+        <div class="carousel">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="icons">
+                            <div class="icons-inner">
+                                <img src="img/location.svg" alt="Everywhere">
+                            </div>
+                            <h2>Everywhere</h2>
+                            <p>We offer online courses available 24/7. You can access all the materials wherever you are
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icons">
+                            <div class="icons-inner">
+                                <img src="img/clock.svg" alt="Everywhere" width="150px">
+                            </div>
+                            <h2>Everywhere</h2>
+                            <p>We offer online courses available 24/7. You can access all the materials wherever you are
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icons">
+                            <div class="icons-inner">
+                                <img src="img/calendar.svg" alt="Everywhere" width="150px">
+                            </div>
+                            <h2>Everywhere</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vel ab velit tenetur
+                                eligendi id.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icons">
+                            <div class="icons-inner">
+                                <img src="img/calendar.svg" alt="Everywhere" width="150px">
+                            </div>
+                            <h2>Everywhere</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vel ab velit tenetur
+                                eligendi id.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icons">
+                            <div class="icons-inner">
+                                <img src="img/calendar.svg" alt="Everywhere" width="150px">
+                            </div>
+                            <h2>Everywhere</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vel ab velit tenetur
+                                eligendi id.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="selection-inner">
-                    <div class="icons">
-                        <h2>Anywhere</h2>
-                        <img src="img/clock.png" alt="anywhere">
-                        <p>We offer online courses available 24/7. You can access all the materials whenever you want.
-                            No
-                            obligations!</p>
-                    </div>
-                </div>
-                <div class="selection-inner">
-                    <div class="icons">
-                        <h2>Anytime</h2>
-                        <img src="img/clock.png" alt="anytime">
-                        <p>Access our courses from any place or time. The one and only thing you need is a high-speed
-                            Internet connection.</p>
-                    </div>
-                </div>
-                <div class="slection-inner">
-                    <div class="icons">
-                        <h2>Everywhere</h2>
-                        <img src="img/location.png" alt="Everywhere">
-                        <p>We offer online courses available 24/7. You can access all the materials wherever you are</p>
-                    </div>
-                </div>
-                <div class="slection-inner">
-                    <div class="icons">
-                        <h2>Everywhere</h2>
-                        <img src="img/location.png" alt="Everywhere">
-                        <p>We offer online courses available 24/7. You can access all the materials wherever you are</p>
-                    </div>
-                </div>
-                <div class="slection-inner">
-                    <div class="icons">
-                        <h2>Everywhere</h2>
-                        <img src="img/location.png" alt="Everywhere">
-                        <p>We offer online courses available 24/7. You can access all the materials wherever you are</p>
-                    </div>
-                </div>
-                <button class="btn__carousel__next">
-                    <img src="/img/right.svg">
-                </button>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-            <div class="caourse__nav">
-                <bouton class="caoursel__indicator"></bouton>
-                <bouton class="caoursel__indicator"></bouton>
-                <bouton class="caoursel__indicator"></bouton>
-            </div>
-        </section> 
-                        -->
-        <!--   <div id="gallery">
-            <div class="gallery-inner">
-                <img src="img/gallery.png" alt="Gallery">
-            </div>
-        </div>-->
-        <div id="about-us">
+        </div>
+        <!--END OF CAROUSEL SECTION-->
+        <!--ABOUT US SECTION-->
+        <section id="about-us">
             <div class="about-us-inner">
                 <div id="illustration-about">
                     <img src="img/about-img.jpeg" alt="our students">
@@ -120,8 +119,44 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="our-courses">
+            <div class="about-us-inner">
+                <div class="about__us__description">
+                    <h2>Lorem ipsum dolor sit amet consectetur</h2>
+                    <div class="motivational-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, harum impedit eos mollitia
+                            quis officiis?
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt recusandae illum, sunt
+                            nulla ad voluptates.
+
+                    </div>
+                </div>
+                <div id="illustration-about">
+                    <img src="img/about-img.jpeg" alt="our students">
+                </div>
+            </div>
+        </section>
+        <!--END OF ABOUT US SECTION-->
+        <!--START OF GALLERY-->
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="container">
+                <div class="main_img">
+                    <img src="img/gallery-1.jpeg" alt="">
+                </div>
+                <div class="gallery_imgs">
+                    <img src="img/gallery-1.jpeg" alt="">
+                    <img src="img/gallery-2.jpg" alt="">
+                    <img src="img/gallery-3.jpg" alt="">
+                    <img src="img/gallery-4.jpeg" alt="">
+                    <img src="img/gallery-5.jpeg" alt="">
+                    <img src="img/gallery-6.jpeg" alt="">
+                </div>
+            </div>
+        </section>
+        <!--END OF GALLERY-->
+        <!--START OF OUR COURSES SECTION-->
+        <section id="our-courses">
             <div class="our-courses-title">
                 <h2>Our courses</h2>
             </div>
@@ -134,6 +169,7 @@
                             Required level: C2<br>
                             Tutor: Anis Dahmani<br>
                             Max number of students per course: 6<br>Course duration: 1 month
+
 
 
 
@@ -150,6 +186,7 @@
 
 
 
+
                         </p>
                         <a href="" class="get-started">Get started</a>
                     </li>
@@ -163,6 +200,7 @@
 
 
 
+
                         </p>
                         <a href="" class="get-started">Get started</a>
                     </li>
@@ -171,8 +209,10 @@
                     <a href="">Contact us</a>
                 </div>
             </div>
-        </div>
-        <div id="our-team">
+        </section>
+        <!--END OF ABOUT-US SECTION-->
+        <!--START OF OUR TEAM SECTION-->
+        <section id="our-team">
             <h2>Our Linguistic Dream Team</h2>
             <div class="teachers">
                 <div class="prof">
@@ -224,24 +264,27 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
+        <!--END OF OUR TEAM SECTION-->
         <div class="all-team">
             <a href="">All Team</a>
         </div>
-        <div class="contacts" id="contact_us">
+        <!--START OF ABOUT-US SECTION-->
+        <section class="contacts" id="contact_us">
             <div class="contacts-title">
                 <h2>Contacts</h2>
                 <p class="subtitles-contacts">Are you interested in our online courses? We will be glad to hear from
                     you. Feel free to contact us in any language! </p>
                 <div class="info-container">
                     <div class="info-inner">
-                        <h2>Adress</h2>
+                        <h2>Address</h2>
                         <p>Kyiv</p>
                     </div>
                     <div class="info-inner">
                         <h2>Hours</h2>
                         <p>
                             Monday-Saturday: 11am-9pm <br>Sunday: 11am-7pm
+
 
 
                         </p>
@@ -276,59 +319,62 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
+        <!--END OF ABOUT-US SECTION-->
     </main>
     <footer>
-        <div class="footer-logo">
-            <img src="img/logo.png" alt="Easy French logo">
-        </div>
-        <div class="nav-lower">
-            <ul>
-                <li>
-                    <a href="#about-us">About</a>
-                </li>
-                <li>
-                    <a href="#gallery">Gallery</a>
-                </li>
-                <li>
-                    <a href="#our-courses">Courses</a>
-                </li>
-                <li>
-                    <a href="#our-team">Tutors</a>
-                </li>
-            </ul>
-        </div>
-        <div id="socials-footer">
-            <p>Follow Us</p>
-            <ul class="social-networks-footer">
-                <li>
-                    <a href="https://www.facebook.com/">
-                        <img src="img/facebook.png" alt="Facebook">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/">
-                        <img src="img/twitter.png" alt="Twitter">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/">
-                        <img src="img/linkin.png" alt="LinkedIn">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/?hl=en">
-                        <img src="img/instagram.png" alt="instagram">
-                    </a>
-                </li>
-            </ul>
+        <div class="main-footer">
+            <div class="footer-navbar">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="Easy French logo">
+                </div>
+                <div class="nav-lower">
+                    <ul>
+                        <li>
+                            <a href="#about-us">About</a>
+                        </li>
+                        <li>
+                            <a href="#gallery">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#our-courses">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#our-team">Tutors</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_socials">
+                <div class="socials-footer">
+                    <p>Follow Us</p>
+                    <ul class="social-networks-footer">
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <img src="img/facebook.png" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/">
+                                <img src="img/twitter.png" alt="Twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/">
+                                <img src="img/linkin.png" alt="LinkedIn">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div id="copyright-mentions">
             <p>© Created by</p>
             <p>All rights Reserved</p>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 
